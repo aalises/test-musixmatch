@@ -2399,7 +2399,7 @@ var utils_1 = require("../utils/utils");
 var querystring_1 = require("querystring");
 function getLastAlbum() {
     var promise = new Promise(function (resolve, reject) {
-        fetch("http://api.musixmatch.com/ws/1.1/artist.albums.get?" + querystring_1.stringify(RequestParams), {
+        fetch("https://api.musixmatch.com/ws/1.1/artist.albums.get?" + querystring_1.stringify(RequestParams), {
             method: "GET",
             headers: {
                 'Accept': 'application/json',
@@ -2552,4 +2552,4 @@ if (module.hot) {
     module.hot.accept();
 }
 },{"preact":"OmAK","./components/Main":"Izf3"}]},{},["zo2T"], null)
-//# sourceMappingURL=src.2023d78b.map
+//# sourceMappingURL=src.54c4a183.map

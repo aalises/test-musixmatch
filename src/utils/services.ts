@@ -3,7 +3,7 @@ import { stringify } from "querystring";
 
 export function getLastAlbum() : Promise<Date>{
     const promise = new Promise<Date>((resolve,reject) => {
-        fetch(`http://api.musixmatch.com/ws/1.1/artist.albums.get?${stringify(RequestParams)}`, {
+        fetch(`https://api.musixmatch.com/ws/1.1/artist.albums.get?${stringify(RequestParams)}`, {
             method: "GET",
             headers:{
               'Accept': 'application/json',
